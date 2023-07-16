@@ -156,13 +156,14 @@
 
         <section class="main-subscribe">
             <h2 class="visually-hidden">Рассылка на почту</h2>
-            <img src="#" width="1200px" height="414.86px" alt="Фотография Гранд каньона">
-            <p>ПОДПИШИТЕСЬ НА РАСЫЛКУ</p>
+            <div class="wrapper-subscribe">
+            <p class="main-subscribe-subtitle">ПОДПИШИТЕСЬ НА РАСЫЛКУ</p>
             <p class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" type="email" >
-                <input type="text"placeholder="Ваш e-mail">
-                <button class="button button-all" type="button">ПОДПИСАТЬСЯ</button>
+                <input class="subscribe-input" type="text"placeholder="Ваш e-mail">
+                <button class="button-subscribe button-all" type="button">ПОДПИСАТЬСЯ</button>
             </form>
+        </div>
         </section>
     </main>
     <footer class="footer-index footer-catalog">
@@ -214,16 +215,18 @@
             </ul>
         </ul>      
         </nav>
-<!-- 
         <section class="main-catalog-hotel">
+            <div class="wrap-catalog-hotel">
             <h2 class="visually-hidden">Каталог гостиниц</h2>
-            <img src="#" width="1200px" height="414.86px" alt="Фотография гор Седоны">
-            <p>Гостиницы Седоны</p>
-            <!-- <img src="" width="" height="" alt="">
-            <img src="" width="" height="" alt=""> -->
-            <p>Гостиницы Седоны</p>
-            <p>Инфраструктура</p>
-            <div class="checkbox">
+            <img class="visually-hidden src="#" width="1200px" height="414.86px" alt="Фотография гор Седоны">
+            <p class="hotel-title">Гостиницы Седоны</p>
+            <div class="breadscrimb"> 
+                <img  src="" width="13" height="15" alt="icon-house">
+                <img  src="" width="6.4" height="9.4" alt="icon-right"> 
+                <span class="hotel-title-text">Гостиницы</span>
+            </div>
+            <div class="wrap-container">
+            <div class="hotel-subtitle-checkbox"> Инфраструктура
             <input type="checkbox" id="cb1" checked>
             <label for="cb1">Бассейн</label>
             <input type="checkbox" id="cb2" checked>
@@ -231,8 +234,7 @@
             <input type="checkbox" id="cb3">
             <label for="cb3">Wi-Fi</label>
             </div>
-            <p>Тип жилья:</p>
-            <div class="radio">
+            <div class= "hotel-subtitle-radio">Тип жилья:
             <input type="radio" id="rb1" name="radio" checked>
             <label for="rb1">Гостиница</label>
             <input type="radio" id="rb2" name="radio">
@@ -240,19 +242,23 @@
             <input type="radio" id="rb3" name="radio">
             <label for="rb3">Апартаменты</label>
             </div>
-            <p>Стоимость, ₽:</p>
-            <form action="https://echo.htmlacademy.ru/">
+            <div class="wrapper-two">
+            <span class="hotel- input-value">Стоимость, ₽:</span>
+            <form class="form-number" action="https://echo.htmlacademy.ru/">
                 <input type="number" placeholder="от" min="0">
                 <input type="number" placeholder="до" max="9000">
-                <p>
-                    <input type="submit" value="Применить">
-                    <input type="reset">
-                </p>
+                
             </form>
             <div class="slidecontainer">
                 <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
             </div>
-        </section> -->
+            </div>
+            <p class="hotel-button">
+                <input type="submit" value="Применить">
+                <input type="reset">
+            </p>
+        </div>
+        </section>
 
 
         <section class="catalog-sorting">
@@ -283,75 +289,92 @@
             <h2 class="visually-hidden">Варианты гостиниц</h2>
             <ul class="cards">
                 <li class="card">
-                  <div class="card-content">
                     <img class="card-img" src="img/hotel-catalog1.jpg" width="300px" height="212px" alt="Фотография расщелины">
                     <h3 class="card-title">Amara Resort & Spa</h3>
                     <p class="card-price">
                         <span class="card-price-name">Гостиница</span>
                         <span class="card-price-value">От 4000 ₽</span>
-                        <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
-                        <button class="button-card button-all" type="button">В ИЗБРАННОЕ</button>
+                        </p>
+                        <p class="card-button">
+                            <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
+                            <button class="button-card-favourites button-all" type="button">В ИЗБРАННОЕ</button>
+                        </p>
                         <p class="card-rating">
+                            <span class="wrap-stars">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
+                        </span>
                             <button class="button button-all-rating" type="button">Рейтинг: 8,5</button>
                         </p>
+                       
                     </ul>
 
             <ul class="cards">
                 <li class="card">
-                    <div class="card-content">
                         <img class="card-img" src="img/hotel-catalog2.jpg" width="300px" height="212px" alt="Фотография горы">
                         <h3 class="card-title">Villas at Poco Diablo</h3>
                         <p class="card-price">
                             <span class="card-price-name">Гостиница</span>
                             <span class="card-price-value">От 5000 ₽</span>
-                            <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
-                            <button class="button-card button-all" type="button">В ИЗБРАННОЕ</button>
+                            </p>
+                        <p class="card-button">
+                                <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
+                                <button class="button-favourites button-all" type="button">В ИЗБРАННОМ</button>
+                        </p>
                             <p class="card-rating">
+                                <span class="wrap-stars">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
+                            </span>
                                 <button class="button button-all-rating" type="button">Рейтинг: 9,2</button>
                         </p>
                      </ul>
 
             <ul class="cards">
                 <li class="card">
-                    <div class="card-content">
                         <img class="card-img" src="img/hotel-catalog3.jpg" width="300px" height="212px" alt="Фотография гор">
                         <h3 class="card-title">Desert Quail Inn</h3>
                         <p class="card-price">
                             <span class="card-price-name">Гостиница</span>
                             <span class="card-price-value">От 2500 ₽</span>
+                        </p>
+                        <p class="card-button">
                             <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
-                            <button class="button-card button-all" type="button">В ИЗБРАННОЕ</button>
+                            <button class="button-card-favourites button-all" type="button">В ИЗБРАННОЕ</button>
+                        </p>
                         <p class="card-rating">
+                            <span class="wrap-stars">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                                 <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
+                                </span>
                                 <button class="button button-all-rating" type="button">Рейтинг: 6,9</button>
                         </p>
                     </ul>
 
             <ul class="cards">
                 <li class="card">
-                    <div class="card-content">
                         <img class="card-img" src="img/hotel-catalog4.jpg" width="300px" height="212px" alt="Фотография гор гранд каньона">
                         <h3 class="card-title">GreenTree Inn</h3>
                         <p class="card-price">
                             <span class="card-price-name">Гостиница</span>
                             <span class="card-price-value">От 1500 ₽</span>
-                            <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
-                            <button class="button-card button-all" type="button">В ИЗБРАННОЕ</button>
+                            <p class="card-button">
+                                <button class="button-card button-all" type="button">ПОДРОБНЕЕ</button>
+                                <button class="button-card-favourites button-all" type="button">В ИЗБРАННОЕ</button>
+                            </p>
                         <p class="card-rating">
+                            <span class="wrap-stars">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
                             <img src="img/icons/icon-star.svg" width="18px" height="17px" alt="Звезды рейтинга">
+                            </span>
                             <button class="button button-all-rating" type="button">Рейтинг: 5,0</button>
                         </p>
+                    </li>
                     </ul>
         </section>
         <section class="catalog-pagination">
@@ -384,8 +407,8 @@
             <p class="catalog-subscribe-subtitle">ПОДПИШИТЕСЬ НА РАСЫЛКУ</p>
             <p class="catalog-subscribe-subtitle-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
             <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" type="email" >
-                <input type="text"placeholder="Ваш e-mail">
-                <button class="button button-all" type="button">ПОДПИСАТЬСЯ</button>
+                <input class="catalog-form" type="text"placeholder="Ваш e-mail">
+                <button class="button-subscribe button-all" type="button">ПОДПИСАТЬСЯ</button>
             </form>
         </div>
         </section>
@@ -417,5 +440,38 @@
             </p>
         </footer>
 </div>
+<section class="search-form">
+    <form>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <img src="#" alt=" Кнопка Закрыть">
+        <p>Дата Заезда: <input type="date" name="calendar"  min="2020-04-27">
+        <p>Мы не можем отправить вас в прошлое.</p>
+        <p>Дата Выезда: <input type="date" name="calendar" max="2023-09-01">
+        <p>На эти даты есть свободные номера. Пока есть.</p>
+        <p>Взрослые:</p>
+
+        <span class="change minus min">
+            <span>-</span>
+        </span>
+        <input type="text" name="productСount" value="2" disabled="">
+        <span class="change plus">
+            <span>+</span>
+        </span>
+
+        <p>Дети:</p>
+        <img src="#" alt="Кнопка Информация">
+        <p>Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+        
+        <span class="change minus min">
+            <span>-</span>
+        </span>
+        <input type="text" name="productСount" value="2" disabled="">
+        <span class="change plus">
+            <span>+</span>
+        
+        </span>
+        <p><input type="submit" value="Найти"></p>
+       </form>
+</section>
 </body>
 </html>
