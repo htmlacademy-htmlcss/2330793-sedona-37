@@ -61,7 +61,6 @@ body {
  li{
     list-style-type:none;
   } 
-  
   /* Стилизация шапки страницы */
 .page-header{
     width: 1200px;
@@ -87,7 +86,6 @@ body {
     padding-left: 30px;
     padding: 0;
     margin: 0;
-   
 }
 .navigation-item{
     display: flex;
@@ -118,8 +116,6 @@ body {
     text-decoration: none;
     color: #000000;
   }
-
-
   /* Стилизация меню */
   .main-photo{
     background-image: url(../img/main-photo.jpg);
@@ -185,7 +181,6 @@ body {
     padding-right: 85px;
     padding-top: 112px;
     text-align: center;
-
 }
 .description-list-color{
     background-color: rgba(131, 179, 211, 0.12)
@@ -200,7 +195,6 @@ body {
     text-transform: uppercase;
     padding-left: 27.5px;
     padding-right: 27.5px;
-
 }
 .description-item-city{
     font-weight: 700;
@@ -208,17 +202,7 @@ body {
     line-height: 28px;
     text-transform: uppercase;
     color: #FFFFFF;
-    
 }
-/* посмотри ебанную черту! */
-/* .decoration{
-    width: 60px;
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.3);
-    text-decoration-thickness: 2px;
-    text-underline-offset: 15px;
-    text-underline-position: under;
-} */
 .description-item-item{
     font-size: 18px;
     line-height: 21px;
@@ -250,7 +234,6 @@ body {
     padding: 0;
     padding-top: 62px;
 }
-
 .about-subtitle{
     font-weight: 700;
     font-size: 30px;
@@ -302,7 +285,6 @@ body {
     background-color:rgba(131, 179, 211, 0.12);
     padding: 0;
     margin: 0;
-
 }
 .description-list-bonus-color{
     width: 400px;
@@ -332,7 +314,6 @@ body {
     text-align: center;
     padding-top: 30px;
 }
-
 .search-hotel{
     width: 592px;
     font-weight: 700;
@@ -491,8 +472,28 @@ body {
     text-decoration: none;
     color: #000000;
   }
-
-
+  .catalog-filter-group{
+    margin: 0;
+    padding: 0;
+    padding-left: 70px;
+  }
+  .catalog-filter-list{
+    padding: 0;
+    margin: 0;
+  }
+.catalog-filter-title{
+    padding-top: 40px;
+    padding-bottom: 32px;
+    width: 141px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+.catalog-filter-item{
+    padding-bottom: 16px;
+    font-size: 18px;
+    line-height: 23px;
+}
 .catalog-sorting{
     width: 1060px;
     margin: 0;
@@ -520,9 +521,6 @@ body {
     height: 49px;
     margin-left: 200px;
 }
-
-
-
 .main-catalog-hotel{
     width: 1200px;
     background-image: url(../img/main-blur.png);
@@ -538,7 +536,6 @@ body {
     padding: 0;
     margin: 0 auto;
     padding-top: 35px;
-    padding-left: 70px;
 }
 .hotel-title{
     padding: 0;
@@ -546,59 +543,94 @@ body {
     font-size: 60px;
     font-weight: 700;
     line-height: 78px;
+    padding-left: 70px;
 }
 .hotel-title-text{
     font-size: 16px;
     font-weight: 400;
     line-height: 21px;
 }
-.hotel-subtitle-checkbox{
-width: 150px;
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-padding-top: 40px;
-}
-.hotel-subtitle-radio{
-    width: 150px;
-display: flex;
-flex-direction: column;
-flex-wrap: nowrap;
-padding-top: 40px;
-padding-left: 70px;
-
-}
 .wrap-container{
     width: 1060px;
     display: flex;
 }
 .wrapper-two{
-width: 288px;
-display: flex;
-flex-direction: column;
-padding-top: 40px;
-padding-left: 140px;
-}
-.hotel-input-value{
-
+    padding: 0;
+    margin: 0;
+    width: 288px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-left: 140px;
 }
 .hotel-button{
-
+    width: 191px;
+    padding-top: 75px;
+    padding-left: 70px;
+}
+.button-hotel-enter{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    background-color: #82B3D3;
+    border-radius: 5px;
+    border-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.button-hotel-reset{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border-style: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 32px;
+    background-color: transparent;
+    cursor: pointer;
 }
 .slidecontainer{
-padding-top: 36px;
+    padding: 0;
+    margin: 0;
+    padding-top: 36px;
+}
+.range-line{
+    background-color: #FFFFFF;
+    position: relative;
+    top: -35px;
+}
+.range-two{
+    padding-left: 186px;
 }
 .breadscrimb{
     width: 114px;
     display: flex;
     padding-top: 8px;
+    gap: 10px;
+    padding-left: 70px;
+    align-items: baseline;
 }
 .form-number{
     padding-top: 32px;
+    display: flex;
 }
-
+.form-number input{
+    padding: 0;
+    margin: 0;
+    width: 143px;
+    height: 48px;
+}
     /* Стилизация пагинации */
-
 .catalog-pagination{
     background-color: #FFFFFF;
 }
@@ -627,8 +659,6 @@ padding-top: 36px;
     margin: 0;
     padding-top: 20px;
 }
-
-
   /* Стилизуем карточки */
 .catalog-hotel{
     width: 1060px;
@@ -653,7 +683,6 @@ padding-top: 36px;
     display: grid;
     gap: 16px;
 }
-
 .card-title{
     margin: 0;
     padding: 0;
@@ -667,7 +696,6 @@ padding-top: 36px;
     font-size: 18px;
     line-height: 21px;
     color: #333333; 
-
 }
 .card-price {
     margin: 0;
@@ -675,14 +703,12 @@ padding-top: 36px;
     display: flex;
     justify-content: space-between;
 }
-
 .card-rating{
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-between;
 }
-
 .catalog-subscribe-form{
     width: 684px;
     display: flex;
@@ -704,7 +730,7 @@ padding-top: 36px;
     padding-right: 70px;
     padding-top: 80px;
 }
-.pagination {
+    .pagination {
     display: flex;
     margin: 0;
     padding: 0;
@@ -735,10 +761,6 @@ padding-top: 36px;
     background-color: #ffffff;
     color: #000000;
   }
-
-
-
-
   .button-all{
     font-weight: 700;
     font-size: 16px;
@@ -750,6 +772,7 @@ padding-top: 36px;
     border-style: none;
     padding-top: 8px;
     padding-bottom: 8px;
+    cursor: pointer;
 }
   .button-all-rating{
     font-size: 16px;
@@ -776,6 +799,10 @@ padding-top: 36px;
     margin: 0;
     margin-left: 70px;
 }
+.card-view-button-grid-active,
+.card-view-button-list{
+    display: none;
+}
   .card-button{
     margin: 0;
     padding: 0;
@@ -793,4 +820,216 @@ padding-top: 36px;
   .button-section-hotel{
     margin-top: 54px;
     padding: 8px  50px;
+  }
+  .search-form{
+    width: 577px;
+    padding: 64px 70px 64px 70px;
+  }
+  fieldset{
+    border: 0;
+  }
+  /* Стилизация модального окна */
+  .modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(242, 242, 242, 0.80);
+
+  }
+  .modal {
+    position: relative;
+    margin: auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+    padding: 64px 70px;
+    
+  }
+  .modal-search{
+    width: 577px;
+    height: 488px;
+
+  }
+  .modal-close-button {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    width: 56px;
+    height: 44px;
+    background-color: #ffffff;
+    border: none;
+    background-image: url("../img/icons/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 30px;
+  } 
+  .modal-title {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 64px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #000000;
+  }
+  .modal-form{
+    display: flex;
+    width: 577px;
+    flex-direction: column;
+  }
+ .field-group{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+ }
+ .field-group-two{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 248px;
+ }
+ .form-calendar{
+    width: 400px;
+    height: 24px;
+    padding: 12px 20px;
+    background-color: #F2F2F2;
+    border: none;
+ }
+ .group-subtitle-text{
+    padding: 0;
+    margin: 0;
+    color: #000000;
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 157px;
+ }
+ .text-eror{
+    color: #FF5757; 
+ }
+ .wrap-modal-group{
+    display: flex;
+    justify-content: space-between;
+ }
+ .button-modal-select{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding: 18px 0;
+    border-radius: 10px;
+    background: #83B3D3;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px; 
+    text-transform: uppercase;
+    border: none;
+    margin-top: 48px;
+    color: #FFFFFF;
+ }
+ .modal-content{
+    width: 577px;
+ }
+
+  .change-minus-min{
+    background-image: url("../img/icons/minus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    width: 40px;
+    padding: 14px 10px;
+  }
+  .change-plus{
+    background-image: url("../img/icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F2F2F2;
+    cursor: pointer;
+    width: 40px;
+    padding: 14px 10px;
+  }
+  .form-select{
+    width: 31px;
+    padding: 14px 10px;
+    background-color: #F2F2F2;
+  }
+  .field-group-two{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .group-subtitle{
+    margin: 0;
+    padding: 0;
+    padding-right: 46px;
+    padding: 12px 0;
+    width: 119px;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 24px;
+  }
+  .tooltip-text {
+    background-color: #242424;
+    position: absolute;
+    color: #ffffff;
+    text-transform: none;
+    border-radius: 8px;
+    display: block;
+    width: 216px;
+    height: min-content;
+    padding: 15px 18px 18px 22px;
+    margin-left: 279px;
+    text-align: start;
+    font-size: 16px;
+    line-height: 20px;
+    /* display: none; */
+  }
+  .tooltip-triangle{
+    position: absolute;
+    background-image: url("../img/icons/triangle\ 1.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 15px 18px 18px 22px;
+    margin-left: 385px;
+    margin-top: -33px;
+    z-index: 1;
+  }
+  .tooltip-toggle:hover .tooltip-icon {
+    color: #AF7842;
+  }
+  .tooltip-toggle{
+    width: 26px;
+    height: 26px;
+    background-image: url("../img/icons/Group 20.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    background-color: #fff;
+    margin-top: 10px;
+    margin-right: 20px;
+  }
+ .modal-container-close {
+    display: none;
+  } 
+  .description-line{
+    width: 60px;
+    height: 2px;
+    background: rgba(0, 0, 0, 0.30);
+    margin-top: 30px;
+    margin-left: 86px;
+  }
+  .description-line-city 
+  .description-line-diablo{
+    width: 60px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.30);
+    margin-top: 30px;
+    margin-left: 86px;
   }
